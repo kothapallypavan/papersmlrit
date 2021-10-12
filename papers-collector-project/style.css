@@ -1,5 +1,40 @@
+
 .header{
     text-align: center;
     font-size: larger;
-    color: rgba(179, 16, 16, 0.705);
+    color: #A8E7E9;
+    margin-top: 5rem;
+    font-family: "Lucida Console", "Courier New", monospace;
+    
+}
+.header h1{
+    font-size: 3rem;
+    text-shadow: 2px 3px 2px rgba(0, 0, 0, 0.1);
+}
+.buttons{
+    text-align: center;
+    margin-top: 8rem;
+}
+.buttons button{
+  width: 140px;
+  height: 45px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #D7E9F7;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+.buttons button:hover{
+    background-color: #2EE59D;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
 }

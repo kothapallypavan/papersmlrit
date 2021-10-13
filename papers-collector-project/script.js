@@ -1,9 +1,11 @@
 function displaynoteform(){
     var x = document.getElementsByClassName('notes_container')[0];
     document.getElementById('paperbuttonclass').style.display="none";
+    document.getElementById('uploadbuttoclass').style.display="none";
     if(x.style.display =="block"){
         x.style.display="none";
         document.getElementById('paperbuttonclass').style.display="block";
+        document.getElementById('uploadbuttoclass').style.display="block";
     }
     else{
         x.style.display="block";
@@ -13,17 +15,15 @@ function displaynoteform(){
 function displaypaperform(){
     var x = document.getElementsByClassName('papers_container')[0];
     document.getElementById('notesbuttonclass').style.display="none";
+    document.getElementById('uploadbuttoclass').style.display="none";
     if(x.style.display =="block"){
         x.style.display="none";
         document.getElementById('notesbuttonclass').style.display="block";
+        document.getElementById('uploadbuttoclass').style.display="block";
     }
     else{
         x.style.display="block";
     }
-}
-
-function uploadform(){
-
 }
 
 function openLoginForm(){
@@ -31,4 +31,4 @@ function openLoginForm(){
   }
   function closeLoginForm(){
     document.body.classList.remove("showLoginForm");
-  }
+}

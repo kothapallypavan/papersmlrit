@@ -18,6 +18,7 @@
         <input type="radio" onchange="showform(this.value)" name="type" id="" value="papers"><label>PAPERS</label> &#160
         <input type="radio" onchange="showform(this.value)" name="type" id="" value="notes"><label>NOTES </label>&#160
     </div><br><br>
+<<<<<<< Updated upstream
     <div class="notesuploadform" style="display: none;">
         <label for="subject_name">subject name</label>
         <input class="put" type="text" name="subject_name" id="subject_name"><br><br>
@@ -35,6 +36,36 @@
         <label for="document">uplaod document</label><br><br>
         <input type="file" name="document" id="document"><br><br>
         <input type="submit" value="submit">
+=======
+    <div align='center' class="notesuploadform" style="display: none;">
+        <form action="upload_notes.php" method="post" enctype="multipart/form-data">
+            <label for="subject_name">Subject name</label>
+            <input type="text" name="subject_name" id="subject_name" required><br><br>
+            <label for="unitnumber">Unit number</label>
+            <input type="number" name="unitnumber" id="unitnumber" required><br><br>
+            <label for="document">Upload document</label><br><br>
+            <input type="file" name="document" id="documnet" required><br><br>
+            <input type="submit" value="submit">
+        </form>
+    </div>
+    <div align='center' class="exampaperuploadform" style="display: none;">
+        <form action="upload_exam_paper.php" method="post" enctype="multipart/form-data">
+            <label for="exam-type">Choose exam type</label>
+            <select name="exam-type" id="exam-type">
+                <option value="mid-1">Mid-1</option>
+                <option value="mid-2">Mid-2</option>
+                <option value="semister">Semister(regular)</option>
+                <option value="supply">Supplimentry</option>
+            </select><br><br>
+            <label for="subject_name">Subject name</label>
+            <input type="text" name="subject_name"  id="subject_name"><br><br>
+            <label for="dataofexam">Date of exam</label>
+            <input type="date" name="dateofexam" id="dateofexam"><br><br>
+            <label for="fileofexam">Uplaod document</label><br><br>
+            <input type="file" name="fileofexam" id="fileofexam"><br><br>
+            <input type="submit" value="submit">
+        </form>
+>>>>>>> Stashed changes
     </div>
 </body>
 <script>

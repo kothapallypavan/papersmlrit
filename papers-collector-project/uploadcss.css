@@ -1,0 +1,59 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@600&display=swap');
+/*title*/
+.header{
+    text-align: center;
+    color: #A8E7E9;
+    margin-top: 2rem;
+    font-family: 'Prompt', sans-serif;
+  }
+.header h1{
+    font-size: 4rem;
+    text-shadow: 5px 6px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.header h1::before {  
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+.header h1:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.header h1::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  inset: 0 0 0 0;
+  background: #FF0075;
+  z-index: -1;
+  transition: transform .3s ease;
+}
+
+@media (orientation: landscape) {
+  body {
+    grid-auto-flow: column;
+  }
+}
+
+
+.field{
+    text-align: center;
+}
+.notesuploadform{
+    text-align: center;
+}
+.exampaperuploadform{
+    text-align: center;
+}
+
+.field label{
+    font-family: cursive;
+}
+.field input[type=radio] {
+    width: 20px;
+}

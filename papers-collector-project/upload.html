@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="uploadcss.css">
     <title>upload document </title>
 </head>
 <body>
@@ -12,9 +13,10 @@
         UPLOAD DOCUMENTS
         </h1>
     </div>
+    
     <div class="field">
-        <input type="radio" onchange="showform(this.value)" name="type" id="" value="papers">PAPERS &#160
-        <input type="radio" onchange="showform(this.value)" name="type" id="" value="notes">NOTES &#160
+        <input type="radio" onchange="showform(this.value)" name="type" id="" value="papers"><label>PAPERS</label> &#160
+        <input type="radio" onchange="showform(this.value)" name="type" id="" value="notes"><label>NOTES </label>&#160
     </div><br><br>
     <div class="notesuploadform" style="display: none;">
         <label for="subject_name">subject name</label>

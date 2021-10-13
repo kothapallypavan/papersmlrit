@@ -65,7 +65,7 @@
     color: rgb(59, 55, 55);
     text-shadow: -3px 3px rgba(0,0,0,0.1);
 }
-.put{
+.text-box{
   margin: 0.5em auto;
   padding: 0.5em 0.25em;
   border: none;
@@ -141,3 +141,15 @@
     font-size: 1.2rem;
 
 }
+.exampaperuploadform select{
+margin-bottom: 1em;
+    padding: .25em;
+    border: 0;
+    border-bottom: 3px solid currentcolor; 
+    font-weight: bold;
+    letter-spacing: .15em;
+    border-radius: 0;
+    &:focus, &:active {
+        outline: 0;
+        border-bottom-color: red;
+    }

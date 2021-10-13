@@ -40,7 +40,6 @@
   }
 }
 
-
 .field{
     text-align: center;
 }
@@ -55,5 +54,90 @@
     font-family: cursive;
 }
 .field input[type=radio] {
-    width: 20px;
+   cursor: pointer; 
+  user-select:none;
+    height: 1.2rem;
+    width: 2rem;
+}
+
+.notesuploadform label{
+   font-family: 'Prompt', sans-serif;
+    color: rgb(59, 55, 55);
+    text-shadow: -3px 3px rgba(0,0,0,0.1);
+}
+.put{
+  margin: 0.5em auto;
+  padding: 0.5em 0.25em;
+  border: none;
+  border-radius: 0.2em;
+  font-size: 0.8em;
+  text-align: center;
+  box-shadow: 0 0 0.2em 0.1em rgba(0,0,0,0.2);
+    width: 15rem;
+    margin-left: 10px;
+}
+
+
+.notesuploadform input[type=submit]{
+    font-family: 'Prompt', sans-serif;
+  font-size: larger;
+    padding: 10px;
+    width: 8rem;
+    border-radius: 3rem;
+    color: rgb(59, 55, 55);
+  background-color: #D7E9F7;
+  border: 1px solid #CEE5D0;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+.notesuploadform input[type=submit]:hover{
+    background-color: #2EE59D;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    cursor: pointer;
+}
+.notesuploadform input[type=file]{
+    font-family: 'Prompt', sans-serif;
+    font-size: larger;
+    padding: 10px;
+    width: 20rem;
+    border-radius: 3rem;
+    color: rgb(59, 55, 55);
+
+}
+
+
+.exampaperuploadform label{
+   font-family: 'Prompt', sans-serif;
+    color: rgb(59, 55, 55);
+    text-shadow: -3px 3px rgba(0,0,0,0.1);
+}
+.exampaperuploadform input[type=submit]{
+    font-family: 'Prompt', sans-serif;
+  font-size: larger;
+    padding: 10px;
+    width: 8rem;
+    border-radius: 3rem;
+    color: rgb(59, 55, 55);
+  background-color: #D7E9F7;
+  border: 1px solid #CEE5D0;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+.exampaperuploadform input[type=submit]:hover{
+    background-color: #2EE59D;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    cursor: pointer;
+}
+.exampaperuploadform input[type=file]{
+    font-family: 'Prompt', sans-serif;
+    font-size: larger;
+    padding: 10px;
+    width: 20rem;
+    border-radius: 3rem;
+    color: rgb(59, 55, 55);
+
+}
+.exampaperuploadform input[type=date]{
+    font-size: 1.2rem;
+
 }

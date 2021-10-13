@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>upload document </title>
-	<link rel="stylesheet" href="uploadcss.css">
+    <link rel="stylesheet" href="uploadcss.css">
     <title>upload document </title>
 </head>
 <body>
@@ -14,43 +13,33 @@
         UPLOAD DOCUMENTS
         </h1>
     </div>
+    
     <div class="field">
-        <input type="radio" onchange="showform(this.value)" name="type" id="" value="papers">EXAM  PAPERS &#160
-        <input type="radio" onchange="showform(this.value)" name="type" id="" value="notes">NOTES &#160
+        <input type="radio" onchange="showform(this.value)" name="type" id="" value="papers"><label>PAPERS</label> &#160
+        <input type="radio" onchange="showform(this.value)" name="type" id="" value="notes"><label>NOTES </label>&#160
     </div><br><br>
     <div class="notesuploadform" style="display: none;">
-        <form action="upload_notes.php" method="post" enctype="multipart/form-data">
-            <label for="subject_name">subject name</label>
-            <input type="text" name="subject_name" id="subject_name" required><br><br>
-            <label for="unitnumber">unit number</label>
-            <input type="number" name="unitnumber" id="unitnumber" required><br><br>
-            <label for="document"> upload document</label><br><br>
-            <input type="file" name="document" id="documnet" required><br><br>
-            <input type="submit" value="submit">
-        </form>
+        <label for="subject_name">subject name</label>
+        <input class="put" type="text" name="subject_name" id="subject_name"><br><br>
+        <label for="unitnumber">unit number</label>
+        <input class="put" type="number" name="unitnumber" id="unitnumber"><br><br>
+        <label for="document"> upload document</label><br><br>
+        <input type="file" name="document" id="documnet"><br><br>
+        <input type="submit" value="submit">
     </div>
     <div class="exampaperuploadform" style="display: none;">
-        <form action="upload_exam_paper.php" method="post" enctype="multipart/form-data">
-            <label for="exam-type">choose exam type</label>
-            <select name="exam-type" id="exam-type">
-                <option value="mid-1">mid-1</option>
-                <option value="mid-2">mid-2</option>
-                <option value="semister">semister(regular)</option>
-                <option value="supply">supplimentry</option>
-            </select><br><br>
-            <label for="subject_name">subject name</label>
-            <input type="text" name="subject_name"  id="subject_name"><br><br>
-            <label for="dataofexam">date of exam</label>
-            <input type="date" name="dateofexam" id="dateofexam"><br><br>
-            <label for="fileofexam">uplaod document</label><br><br>
-            <input type="file" name="fileofexam" id="fileofexam"><br><br>
-            <input type="submit" value="submit">
-        </form>
+        <label for="subject_name">subject name</label>
+        <input class="put" type="text" name="subject_name"  id="subject_name"><br><br>
+        <label for="dataofexam">date of exam</label>
+        <input class="put" type="date" name="dateofexam" id="dateofexam"><br><br>
+        <label for="document">uplaod document</label><br><br>
+        <input type="file" name="document" id="document"><br><br>
+        <input type="submit" value="submit">
     </div>
 </body>
 <script>
     function showform(name){
-        if(name=="notes"){
+        if(name=="papers"){
             document.getElementsByClassName('notesuploadform')[0].style.display="block";
             document.getElementsByClassName('exampaperuploadform')[0].style.display="none";
         }

@@ -80,29 +80,109 @@
 }
 .notes_container legend {
     text-align: center;
-    font-family: cursive;
-    background-color: #9FE6A0;
+    font-family: 'Prompt', sans-serif;
+    background-color: #2EE59D;
     padding: 5px;
     border: 1px solid #B2B1B9;
     border-radius: 5px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
 }
-
+.notes_container select{
+    margin-bottom: 1em;
+    padding: .25em;
+    border: 0;
+    border-bottom: 3px solid currentcolor; 
+    font-weight: bold;
+    letter-spacing: .15em;
+    border-radius: 0;
+    &:focus, &:active {
+        outline: 0;
+        border-bottom-color: red;
+    }
+}
+.notes_container label{
+    font-size: 1.2rem;
+    font-family: cursive;
+    color: #334756;
+}
+.notes_container input[type=submit]{
+    font-family: 'Prompt', sans-serif;
+  font-size: larger;
+    padding: 10px;
+    width: 8rem;
+    border-radius: 3rem;
+    color: rgb(59, 55, 55);
+  background-color: #D7E9F7;
+  border: 1px solid #CEE5D0;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+.notes_container input[type=submit]:hover{
+    background-color: #2EE59D;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    cursor: pointer;
+}
 .papers_container fieldset {
     background-color: #FAF3F3;
-    padding: 20px;
+    padding: 50px;
     border: 5px solid #B2B1B9;
     border-radius: 10px;
 }
-
+.papers_container label{
+    font-size: 1.2rem;
+    font-family: cursive;
+    color: #334756;
+}
+.papers_container select{
+    margin-bottom: 1em;
+    padding: .25em;
+    border: 0;
+    border-bottom: 3px solid currentcolor; 
+    font-weight: bold;
+    letter-spacing: .15em;
+    border-radius: 0;
+    &:focus, &:active {
+        outline: 0;
+        border-bottom-color: red;
+    }
+}
 .papers_container legend {
     text-align: center;
-    font-family: cursive;
-    background-color: #9FE6A0;
+    font-family: 'Prompt', sans-serif;
+    background-color: #2EE59D;
     padding: 5px;
     border: 1px solid #B2B1B9;
     border-radius: 5px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.papers_container input[type=submit]{
+    font-family: 'Prompt', sans-serif;
+  font-size: larger;
+    padding: 10px;
+    width: 8rem;
+    border-radius: 3rem;
+    color: rgb(59, 55, 55);
+  background-color: #D7E9F7;
+  border: 1px solid #CEE5D0;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+.papers_container input[type=submit]:hover{
+    background-color: #2EE59D;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    cursor: pointer;
 }
 
+.papers_container input[type=radio]{
+    
+    box-shadow: 5px 8px 15px rgba(0, 0, 0, 0.1);
+   cursor: pointer; 
+  user-select:none;
+    height: 1.2rem;
+    width: 1.2rem;
+ 
+  
+}
 
 /* -------------------------------------------------------------------- */
 /* popup box styling  */

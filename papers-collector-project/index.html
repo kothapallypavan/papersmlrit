@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,17 +9,69 @@
     <link rel="stylesheet" href="style.css">
     <script src="./script.js"></script>
 </head>
+
 <body>
     <div class="header">
-    <h1>Welcome to MLRIT</h1>
+        <h1>MLRIT EXAM PAPER COLLECTOR</h1>
     </div>
-    
+
     <div class="buttons">
-        <button name="admin" value="admin">ADMIN</button>
+        <button name="papers"id="paperbutton" value="papers" onclick="displaypaperform()">Question PAPERS</button>
         <br><br>
-        <button name="user" value="user">USER</button>
-        
+        <button name="NOTES" id="notesbutton" value="NOTES" onclick="displaynoteform()">NOTES</button>
     </div>
-    
+    <div class="questionpapers_container">
+
+    </div>
+    <div class="notes_container" style="display: none;">
+        <form action="/action_page.php">
+            <fieldset style="width: 40%; height: auto; text-align: center;">
+                <legend>NOTES AND MATERIAL:</legend>
+                <label for="fname">choose a subject : </label>
+                <select name="subject" id="subject">
+                    <option value="" disabled>select</option>
+                    <option value="AIRTIFICIAL INTELIGENCE">AIRTIFICIAL INTELIGENCE</option>
+                    <option value="PROGRAMMING FOR PROBLEM SOLVING">PROGRAMMING FOR PROBLEM SOLVING</option>
+                    <option value="WEB TECHNOLOGIES">WEB TECHNOLOGIES</option>
+                    <option value="programmer">Programmer</option>
+                    <option value="DESIGN AND ANALYSIS OF ALGORITHM">DESIGN AND ANALYSIS OF ALGORITHM</option>
+                </select><br><br><br>
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+    </div>
+    <div class="papers_container" style="display: none;">
+        <form action="/action_page.php">
+            <fieldset>
+              <legend>paper selection :</legend>
+              <label for="fname">choose a subject : </label>
+                <select name="subject" id="subject">
+                    <option value="" disabled>select</option>
+                    <option value="AIRTIFICIAL INTELIGENCE">AIRTIFICIAL INTELIGENCE</option>
+                    <option value="PROGRAMMING FOR PROBLEM SOLVING">PROGRAMMING FOR PROBLEM SOLVING</option>
+                    <option value="WEB TECHNOLOGIES">WEB TECHNOLOGIES</option>
+                    <option value="programmer">Programmer</option>
+                    <option value="DESIGN AND ANALYSIS OF ALGORITHM">DESIGN AND ANALYSIS OF ALGORITHM</option>
+                </select><br><br>
+                <label for="fname">choose a year : </label>
+                <select name="year-selected" id="year-selected">
+                    <option value="" disabled>select</option>
+                    <option value="2020-2021">2020-2021</option>
+                    <option value="2021-2022">2021-2022</option>
+                </select><br><br>
+                <label for="fname">choose a exam : </label>
+                <select name="exam" id="exam">
+                    <option value="" disabled>select</option>
+                    <option value="semister">semister</option>
+                    <option value="mid-1">mid-1</option>
+                    <option value="mid-2">mid-2</option>
+                </select><br><br>
+                <input type="radio" name="exam-type" id="exam-type" value="regular"> regular 
+                <input type="radio" name="exam-type" id="exam-type" value="supply"> supplymentry<br><br>
+                <input type="submit" value="Submit">
+            </fieldset>
+          </form>
+    </div>
 </body>
+
 </html>

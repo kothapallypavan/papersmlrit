@@ -1,6 +1,5 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@600&display=swap');
-
 .header{
     text-align: center;
     color: #A8E7E9;
@@ -12,7 +11,7 @@
     text-shadow: 5px 6px 5px rgba(0, 0, 0, 0.1);
 }
 .buttons{
-    text-align: center;
+    align-items: center;
     margin-top: 8rem;
 }
 .buttons button{

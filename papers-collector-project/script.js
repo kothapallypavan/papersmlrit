@@ -1,9 +1,9 @@
 function displaynoteform(){
     var x = document.getElementsByClassName('notes_container')[0];
-    document.getElementById('paperbutton').style.display="none";
+    document.getElementById('paperbuttonclass').style.display="none";
     if(x.style.display =="block"){
         x.style.display="none";
-        document.getElementById('paperbutton').style.display="block";
+        document.getElementById('paperbuttonclass').style.display="block";
     }
     else{
         x.style.display="block";
@@ -12,10 +12,10 @@ function displaynoteform(){
 
 function displaypaperform(){
     var x = document.getElementsByClassName('papers_container')[0];
-    document.getElementById('notesbutton').style.display="none";
+    document.getElementById('notesbuttonclass').style.display="none";
     if(x.style.display =="block"){
         x.style.display="none";
-        document.getElementById('notesbutton').style.display="block";
+        document.getElementById('notesbuttonclass').style.display="block";
     }
     else{
         x.style.display="block";

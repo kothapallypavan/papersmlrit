@@ -21,3 +21,14 @@ function displaypaperform(){
         x.style.display="block";
     }
 }
+
+function uploadform(){
+
+}
+
+function openLoginForm(){
+    document.body.classList.add("showLoginForm");
+  }
+  function closeLoginForm(){
+    document.body.classList.remove("showLoginForm");
+  }

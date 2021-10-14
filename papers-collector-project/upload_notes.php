@@ -8,13 +8,17 @@ mysqli_select_db($conn,$db);
 if($_FILES['document']){
     $subject_name = $_POST['subject_name'];
     $unit_description = $_POST['unitnumber'];
+    
     $original_file= $_FILES['document']['name'];
     $source_file = $_FILES['document']['tmp_name'];
-    $destination = "Notes/".$original_file;
+
+    $temp = explode(".", $_FILES["document"]["name"]);
+    $newfilename = round(microtime(true)) . '.' . end($temp);
+    $destination = "Notes/".$newfilename;
 
     move_uploaded_file($source_file,$destination);
 
-    $query = "INSERT INTO `notes_table` (`id`, `name_of_subject`, `decription_of_notes`, `notes_file`) VALUES (NULL, '$subject_name', '$unit_description', '$original_file');";
+    $query = "INSERT INTO `notes_table` (`id`, `name_of_subject`, `decription_of_notes`, `notes_file`) VALUES (NULL, '$subject_name', '$unit_description', '$newfilename');";
     $res = mysqli_query($conn,$query);
     if($res == true){
         echo "data addes successfully";

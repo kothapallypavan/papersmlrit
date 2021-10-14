@@ -42,6 +42,8 @@
 
 .field{
     text-align: center;
+    color:#6c757d;
+    font-family: 'Prompt', sans-serif;
 }
 .notesuploadform{
     text-align: center;
@@ -52,18 +54,21 @@
 
 .field label{
     font-family: cursive;
+    
 }
 .field input[type=radio] {
    cursor: pointer; 
   user-select:none;
     height: 1.2rem;
     width: 2rem;
+    
 }
 
 .notesuploadform label{
    font-family: 'Prompt', sans-serif;
-    color: rgb(59, 55, 55);
+    color:#6c757d;
     text-shadow: -3px 3px rgba(0,0,0,0.1);
+    
 }
 .text-box{
   margin: 0.5em auto;
@@ -84,7 +89,7 @@
     padding: 10px;
     width: 8rem;
     border-radius: 3rem;
-    color: rgb(59, 55, 55);
+    color:#495057;
   background-color: #D7E9F7;
   border: 1px solid #CEE5D0;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
@@ -101,15 +106,16 @@
     padding: 10px;
     width: 20rem;
     border-radius: 3rem;
-    color: rgb(59, 55, 55);
+     color:#6c757d;
 
 }
 
 
 .exampaperuploadform label{
    font-family: 'Prompt', sans-serif;
-    color: rgb(59, 55, 55);
+    color:#6c757d;
     text-shadow: -3px 3px rgba(0,0,0,0.1);
+    
 }
 .exampaperuploadform input[type=submit]{
     font-family: 'Prompt', sans-serif;
@@ -134,11 +140,7 @@
     padding: 10px;
     width: 20rem;
     border-radius: 3rem;
-    color: rgb(59, 55, 55);
-
-}
-.exampaperuploadform input[type=date]{
-    font-size: 1.2rem;
+    color:#6c757d;
 
 }
 .exampaperuploadform select{
@@ -149,9 +151,63 @@ margin-bottom: 1em;
     font-weight: bold;
     letter-spacing: .15em;
     border-radius: 0;
-}
-    .exampaperuploadform :focus, .exampaperuploadform:active {
+    
+    &:focus, &:active {
         outline: 0;
         border-bottom-color: red;
+        
     }
-  
+}
+.filecss{
+    
+}
+.filecss::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.filecss::before {
+  content: 'Select file';
+  display: inline-block;
+  background: linear-gradient(top, #f9f9f9, #e3e3e3);
+  border: 3px solid #999;
+  border-radius: 8px;
+  padding:5px 8px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-weight: 700;
+  font-size: 10pt;
+margin-right: -6rem;
+}
+.filecss:hover::before {
+  border-color: black;
+     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+.filecss:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+    
+}
+
+/*effect-underline*/
+.effect:after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  height: 1em;
+  width: 100%;
+    left: 0;
+  border-bottom: 1px solid;
+  margin-top: 10px;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(0,1);
+  transform: scale(0,1);
+}
+
+.effect:hover:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}

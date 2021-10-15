@@ -1,13 +1,13 @@
 <?php
-$conn = mysqli_connect("localhost","root","");
-mysqli_select_db($conn,"paper-collector");
+$conn = mysqli_connect("localhost","id17764402_root","b<fp)bKv{v2]!VZl");
+mysqli_select_db($conn,"id17764402_paper_collector");
 
 if(isset($_POST['submit'])){
-    $sname = $_POST['subject'];
+    //$sname = $_POST['subject'];
+    $branch = $_POST['branch'];
     $paperyear = $_POST['year-selected'];
     $exam = $_POST['exam'];
-
-    $query = "SELECT * FROM `exam-table` WHERE `subject-name`=\"$sname\" AND date_of_exam=\"$paperyear\" AND exam_type=\"$exam\";";
+    $query = "SELECT * FROM `exam-table` WHERE `branch`=\"$branch\" AND date_of_exam=\"$paperyear\" AND exam_type=\"$exam\";";
     $raw = mysqli_query($conn,$query);
     while($res = mysqli_fetch_array($raw)){
         ?>
